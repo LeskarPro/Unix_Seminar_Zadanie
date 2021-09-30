@@ -17,7 +17,7 @@ while 1:
         reply = d[0]
         addr = d[1]
 
-        print('Server reply : ', str(reply))
+        print('Server reply : ', reply.decode())
 
     except (socket.error, msg):
         print(f'Error Code : ', str(msg[0]), ' Message ', msg[1])
