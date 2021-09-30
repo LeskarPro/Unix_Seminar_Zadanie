@@ -27,7 +27,7 @@ while 1:
         break
 
     print('Message[' + addr[0] + ':' + str(addr[1]) + '] - ' + str(data.strip()))
-    reply = input()
+    reply = data.decode()
     s.sendto(bytes(reply, 'utf-8'), addr)
 
 s.close()
